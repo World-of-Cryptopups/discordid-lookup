@@ -6,6 +6,7 @@ const app = express();
 
 const apiUrl = "https://discord.com/api/v10/users/";
 const TOKEN = process.env.TOKEN;
+const PORT = process.env.PORT ?? 8080;
 
 app.use(cors());
 
@@ -28,8 +29,8 @@ app.get("/id/:id", async (req, res) => {
   res.status(r.status).json(response);
 });
 
-app.listen(3000, () => {
-  console.log("Listening on port http://localhost:3000");
+app.listen(PORT, () => {
+  console.log(`Listening on port http://localhost:${PORT}`);
 });
 
 module.exports = app;

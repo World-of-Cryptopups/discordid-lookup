@@ -1,6 +1,10 @@
-# discordid-lookup
-
-Simple discord id lookup api.
+---
+title: "discordid-lookup"
+tagline: "Simple discord id lookup api."
+theme_color: "#f43f5e"
+git: "https://github.com/World-of-Cryptopups/discordid-lookup"
+homepage: "https://github.com/World-of-Cryptopups/discordid-lookup"
+---
 
 ## Required Environment Variables
 

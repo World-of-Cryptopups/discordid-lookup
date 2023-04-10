@@ -1,0 +1,15 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+app_name: dislookup
+micros:
+  - name: discordid-lookup
+    src: ./
+    engine: nodejs16
+    primary: true
+    presets:
+      env:
+        - name: TOKEN
+          description: Your discord bot token.
+          default: ""
+    public: true # set app to public
+    run: node index.js
